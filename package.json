@@ -8,8 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "xbzhang2020",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbzhang2020/learning-babel"
+  },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
