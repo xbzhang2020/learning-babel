@@ -4,6 +4,8 @@ const code = `function square(n) {
     return n * n;
 }`;
 
-const res = parser.parse(code);
+const code2 = "foo === bar";
 
-console.log(res);
+const res = parser.parse(code2);
+
+console.log(res.program.body[0].expression);
