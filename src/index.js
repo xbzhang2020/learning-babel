@@ -6,12 +6,11 @@ const code = `
 function square(n) {
     return n * n;
 }
-n;
 `;
 
 const code2 = `foo === bar;`;
 
-const res = transformSync(code2, {
+const res = transformSync(code, {
   plugins: [transformBinary],
 });
 
