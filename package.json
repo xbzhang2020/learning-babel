@@ -24,6 +24,7 @@
     "@babel/template": "^7.20.7",
     "@babel/traverse": "^7.21.4",
     "@babel/types": "^7.21.4",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vue-template-compiler": "^2.7.14"
   }
 }
