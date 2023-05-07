@@ -8,7 +8,7 @@ import { transformVue } from './plugins/transform-vue.js'
 
 // 1. 读取 vue 文件
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const fileName = join(__dirname, './examples/vue/BaseOption.vue')
+const fileName = join(__dirname, './examples/vue/option-base.vue')
 const code = readFileSync(fileName, 'utf-8')
 // console.log(code);
 
