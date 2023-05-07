@@ -3,11 +3,5 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      msg: 111
-    }
-  }
-}
+export default {}
 </script>
