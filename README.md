@@ -2,7 +2,7 @@
 
 babel 核心流程：parse、transform、generate
 
-babel 核心能力：
+babel 核心工具包：
 
 - parser: 将 code 解析为 ast
 - traverse: 遍历 ast，进行处理
