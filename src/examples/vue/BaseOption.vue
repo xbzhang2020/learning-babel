@@ -1,7 +1,13 @@
 <template>
-    <div></div>
+  <div></div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      msg: 111
+    }
+  }
+}
 </script>

@@ -25,4 +25,4 @@ const res = transformSync(scriptContent, {
   plugins: [transformVue],
 })
 
-// console.log(res);
+console.log(res.code)
