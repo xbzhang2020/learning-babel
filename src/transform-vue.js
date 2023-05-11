@@ -10,19 +10,21 @@ import { transformVue } from './plugins/transform-vue.js'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const fileName = join(__dirname, './examples/vue/option-base.vue')
 const code = readFileSync(fileName, 'utf-8')
-// console.log(code);
 
 // 2. 解析 script 部分
 const sfc = compiler.parseComponent(code)
-const scriptContent = sfc.script.content
+const script = sfc.script
 // console.log(sfc.script.content)
 
 // 3. 使用 babel 处理 script 部分
 // const ast = parse(scriptContent, { sourceType: "module" });
 // console.log(ast.program.body);
-const res = transformSync(scriptContent, {
+const res = transformSync(script.content, {
   sourceType: 'module',
   plugins: [transformVue],
 })
+const replaceScript = res.code
 
-console.log(res.code)
+// 4. 输出结果
+const content = `${code.slice(0, script.start)}\n${replaceScript}\n${code.slice(script.end)}`
+console.log(content)
